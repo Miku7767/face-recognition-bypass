@@ -76,7 +76,7 @@ from src.face_recognizer import FaceRecognizer
 fr = FaceRecognizer()                        # 加载模型
 fr.build_gallery("data/gallery")              # 构建人脸库
 person, sim = fr.identify("data/query/test.jpg")  # 1:N 识别
-print(person, sim)                            # 输出：周家名 0.741
+print(person, sim)                            # 输出：张三 0.741
 ```
 
 ### LFW 标准评估
@@ -89,7 +89,7 @@ python src/face_recognizer.py evaluate-lfw --lfw-dir data/lfw --pairs data/lfw/p
 
 | 场景 | 相似度 | 判定 | 结果 |
 |------|--------|------|------|
-| 同一个人（周家名） | 0.741 | ≥0.65 匹配 | ✓ 正确 |
+| 同一个人（张三） | 0.741 | ≥0.65 匹配 | ✓ 正确 |
 | 完全陌生人 | 0.080 | <0.65 拒识 | ✓ 正确 |
 | 边界案例 | 0.638 | <0.65 拒识 | ✓ 正确 |
 
