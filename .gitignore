@@ -1,0 +1,27 @@
+# 虚拟环境
+venv/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 模型文件（太大，提供下载说明即可）
+*.onnx
+*.zip
+
+# 数据集（太大，提供下载链接）
+data/gallery/
+data/query/
+data/lfw/
+
+# 输出
+outputs/*.npz
+
+# IDE
+.idea/
+.vscode/
+
+# 系统文件
+.DS_Store
+Thumbs.db
